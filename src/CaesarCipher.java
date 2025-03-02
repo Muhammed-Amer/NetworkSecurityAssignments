@@ -1,7 +1,6 @@
 public class CaesarCipher {
     public String caesarCipherEncryption(String plainText, int key) {
         StringBuilder sb = new StringBuilder();
-        String result= "";
         for(int i=0; i<plainText.length(); i++) {
             char currentChar = plainText.charAt(i);
             char cipheredChar;
@@ -14,8 +13,7 @@ public class CaesarCipher {
             }
             sb.append(cipheredChar);
         }
-        result = sb.toString();
-        return result;
+        return sb.toString();
     }
 
     public String caesarCipherDecryption(String cipheredText, int key) {
